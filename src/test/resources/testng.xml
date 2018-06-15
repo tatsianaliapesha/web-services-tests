@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="groupkt.com WS test" verbose="1">
+
+
+    <test name="Positive Test">
+        <parameter name="stateCode" value="AK"/>
+        <parameter name="capital" value="Juneau"/>
+        <classes>
+            <class name="com.groupkt.scenarios.GroupKtRestServicePositiveTest"/>
+        </classes>
+    </test>
+
+    <test name="Negative Test">
+        <parameter name="stateCode" value="blabla"/>
+        <classes>
+            <class name="com.groupkt.scenarios.GroupKtRestServiceNegativeTest"/>
+        </classes>
+    </test>
+</suite>
